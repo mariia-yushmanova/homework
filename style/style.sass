@@ -1,0 +1,559 @@
+@import 'footer'
+
+*
+    margin: 0
+    padding: 0
+    outline: none
+
+body
+    font-family: 'Lato', sans-serif
+
+.navigation
+    background-color: #222222
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+
+.nav__wrap
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+    padding: 20px 0
+
+.nav__right
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: baseline
+    -ms-flex-align: baseline
+    align-items: baseline
+    list-style-type: none
+
+.nav__logo
+    margin-right: 40px
+
+.nav__catalog
+    padding: 10px 10px 20px 0
+    position: relative
+    margin-right: 20px
+
+.nav__login
+    padding-right: 30px
+
+.mega-box
+    position: absolute
+    background-color: #FFFFFF
+    margin-top: 5px
+    padding: 37px 0 37px 0
+    width: 232px
+    display: none
+    -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+.mega__heading
+    color: #000000
+    font-weight: 700
+    font-size: 14px
+    line-height: 17px
+    padding-left: 34px
+
+.mega__title
+    color: #F16D7F
+    font-weight: 400
+    font-size: 14px
+    line-height: 17px
+    padding: 20px 0 6px 34px
+    text-transform: uppercase
+
+.mega__link
+    display: block
+    color: #6F6E6E
+    font-weight: 400
+    font-size: 14px
+    line-height: 17px
+    text-decoration: none
+    padding: 6px 0 5px 55px
+
+    &-bottom
+        padding-bottom: 0
+
+    &:hover
+        color: #F16D7F
+
+.nav__list:hover .mega-box
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+
+.banner
+    background-color: #F1E4E6
+
+    &__box
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+
+    &__slogan
+        padding-left: 16px
+        border-left: 12px solid #F16D7F
+        margin-left: 60px
+
+    &__slogan:hover
+        -webkit-transform: scale(1.2)
+        transform: scale(1.2)
+
+.the-brand
+    font-weight: bold
+    font-size: 48px
+
+.banner__text
+    font-weight: 700
+    font-size: 32px
+
+    &-color
+        color: #F16D7F
+
+.project
+    margin-top: 65px
+
+    &__first
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-pack: justify
+        -ms-flex-pack: justify
+        justify-content: space-between
+        -ms-flex-wrap: wrap
+        flex-wrap: wrap
+        margin-bottom: 30px
+
+    &__img
+        position: relative
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        text-align: center
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+
+    &__img:hover .project__text
+        -webkit-transform: scale(1.2)
+        transform: scale(1.2)
+
+    &__text
+        position: absolute
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+
+    &__text-mini
+        color: #F16D7F
+        font-weight: 700
+        font-size: 24px
+
+.card__title
+    font-size: 30px
+    line-height: 36px
+    color: #222222
+    text-align: center
+    padding-top: 96px
+
+.card__subtitle
+    font-size: 14px
+    line-height: 17px
+    color: #9F9F9F
+    text-align: center
+    padding-top: 6px
+    padding-bottom: 48px
+    font-weight: 400
+
+.card__wrap
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+
+.card
+    width: 360px
+    position: relative
+    margin-bottom: 48px
+    -webkit-transition: -webkit-box-shadow 1s
+    transition: -webkit-box-shadow 1s
+    transition: box-shadow 1s
+    transition: box-shadow 1s, -webkit-box-shadow 1s
+
+    &__link
+        display: block
+        text-decoration: none
+        text-align: left
+
+    &__img
+        width: 100%
+        display: block
+
+    &__text-box
+        padding: 25px 28px 20px 18px
+        background: #F8F8F8
+
+    &__text-title
+        font-size: 13px
+        line-height: 16px
+        color: #000000
+        font-weight: 400
+        padding-bottom: 12px
+
+    &__text
+        font-size: 14px
+        line-height: 17px
+        color: #5D5D5D
+        padding-bottom: 18px
+        font-weight: 300
+
+    &__text-price
+        font-size: 16px
+        line-height: 19px
+        color: #F16D7F
+        font-weight: 400
+
+    &:hover
+        -webkit-box-shadow: rgba(58, 56, 56, 0.86)
+        box-shadow: rgba(58, 56, 56, 0.86)
+        -webkit-transform: scale(1.1)
+        transform: scale(1.1)
+
+    &:hover .card__img
+        -webkit-filter: brightness(30%)
+        filter: brightness(30%)
+
+    &__button
+        display: none
+        position: absolute
+        top: 200px
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+        width: 100%
+        pointer-events: none
+
+    &__button-link
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        text-decoration: none
+        padding: 8px
+        border: 1px solid #fff
+        pointer-events: all
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+
+    &__button-img
+        padding-right: 8px
+
+    &__button-text
+        font-family: 'Lato'
+        font-weight: 400
+        line-height: 17px
+        color: #FFFFFF
+
+    &__button-link:hover
+        -webkit-box-shadow: 0 0px 10px #FFFFFF
+        box-shadow: 0 0px 10px #FFFFFF
+
+    &:hover .card__button
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+
+.browse__button
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+
+.browse__link
+    text-decoration: none
+    border: 1px solid #F16D7F
+    background-color: #F16D7F
+    color: #FFFFFF
+    padding: 14px 40px
+    -webkit-transition: background-color 1s
+    transition: background-color 1s
+    -webkit-transition: color 1s
+    transition: color 1s
+
+.browse__text
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+
+.browse__link:hover
+    color: #F16D7F
+    background-color: #FFFFFF
+
+.info
+    background-color: #222224
+    padding: 104px 0
+    margin-top: 95px
+
+    &__wrap
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -ms-flex-pack: distribute
+        justify-content: space-around
+        -ms-flex-wrap: wrap
+        flex-wrap: wrap
+
+    &__content
+        width: 360px
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-orient: vertical
+        -webkit-box-direction: normal
+        -ms-flex-direction: column
+        flex-direction: column
+        -webkit-box-sizing: border-box
+        box-sizing: border-box
+        text-align: center
+        -webkit-animation: anime 8s ease 0s infinite normal both
+        animation: anime 8s ease 0s infinite normal both
+
+@-webkit-keyframes anime
+  0%,
+  100% 
+    -webkit-transform: translateX(0%)
+    transform: translateX(0%)
+    -webkit-transform-origin: 50% 50%
+    transform-origin: 50% 50%
+
+  5% 
+    -webkit-transform: translateX(-30px) rotate(6deg)
+    transform: translateX(-30px) rotate(6deg)
+
+  10% 
+    -webkit-transform: translateX(15px) rotate(-6deg)
+    transform: translateX(15px) rotate(-6deg)
+
+  15% 
+    -webkit-transform: translateX(-15px) rotate(3.6deg)
+    transform: translateX(-15px) rotate(3.6deg)
+
+  20% 
+    -webkit-transform: translateX(9px) rotate(-2.4deg)
+    transform: translateX(9px) rotate(-2.4deg)
+
+  25% 
+    -webkit-transform: translateX(-6px) rotate(1.2deg)
+    transform: translateX(-6px) rotate(1.2deg)
+
+  30% 
+    -webkit-transform: translateX(0) rotate(0)
+    transform: translateX(0) rotate(0)
+
+  100% 
+    -webkit-transform: translateX(0) rotate(0)
+    transform: translateX(0) rotate(0)
+
+@keyframes anime
+    0%,
+    100%
+        -webkit-transform: translateX(0%)
+        transform: translateX(0%)
+        -webkit-transform-origin: 50% 50%
+        transform-origin: 50% 50%
+
+    5%
+        -webkit-transform: translateX(-30px) rotate(6deg)
+        transform: translateX(-30px) rotate(6deg)
+
+    10%
+        -webkit-transform: translateX(15px) rotate(-6deg)
+        transform: translateX(15px) rotate(-6deg)
+
+    15%
+        -webkit-transform: translateX(-15px) rotate(3.6deg)
+        transform: translateX(-15px) rotate(3.6deg)
+
+    20%
+        -webkit-transform: translateX(9px) rotate(-2.4deg)
+        transform: translateX(9px) rotate(-2.4deg)
+
+    25%
+        -webkit-transform: translateX(-6px) rotate(1.2deg)
+        transform: translateX(-6px) rotate(1.2deg)
+
+    30%
+        -webkit-transform: translateX(0) rotate(0)
+        transform: translateX(0) rotate(0)
+
+    100%
+        -webkit-transform: translateX(0) rotate(0)
+        transform: translateX(0) rotate(0)
+
+.content__img
+    -ms-flex-item-align: center
+    -ms-grid-row-align: center
+    align-self: center
+
+.content_title
+    font-weight: 400
+    font-size: 20px
+    line-height: 24px
+    color: #FBFBFB
+    padding-top: 20px
+    padding-bottom: 16px
+
+.content_text
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    color: #FBFBFB
+
+.content__padding
+    padding-bottom: 8px
+
+.content_padding
+    padding-bottom: 6px
+
+.subscribe
+    background: url(../img/sub_back.jpg) no-repeat
+    background-position: bottom
+    background-size: cover
+    min-height: 448px
+
+    &__wrap
+        min-height: 448px
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-pack: justify
+        -ms-flex-pack: justify
+        justify-content: space-between
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        -ms-flex-wrap: wrap
+        flex-wrap: wrap
+
+    &__left,
+
+    &__right
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-orient: vertical
+        -webkit-box-direction: normal
+        -ms-flex-direction: column
+        flex-direction: column
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+
+    &__right
+        width: 560px
+
+    &__photo
+        margin: 0 0 30px 0
+
+    &__comment
+        max-width: 360px
+        font-weight: 400
+        font-size: 20px
+        line-height: 24px
+        text-align: center
+
+    &__comment:hover
+        -webkit-transform: scale(1.2)
+        transform: scale(1.2)
+
+    &__title
+        font-size: 24px
+        font-weight: 700
+        line-height: 37px
+
+    &__text
+        font-weight: 400
+        font-size: 18px
+        margin: 0 0 32px 0
+        line-height: 30px
+
+    &__form
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+
+    &__input
+        border: 1px solid transparent
+        background-color: #E1E1E1
+        border-radius: 20px 0 0 20px
+        padding: 14px 20px
+        min-width: 200px
+
+    &__input::-webkit-input-placeholder
+        font-size: 14px
+        line-height: 17px
+        font-weight: 400
+
+    &__input:-ms-input-placeholder
+        font-size: 14px
+        line-height: 17px
+        font-weight: 400
+
+    &__input::-ms-input-placeholder
+        font-size: 14px
+        line-height: 17px
+        font-weight: 400
+
+    &__input::placeholder
+        font-size: 14px
+        line-height: 17px
+        font-weight: 400
+
+    &__input:hover
+        background: #dbdbdb
+
+    &__button
+        background-color: #F16D7F
+        border-radius: 0 20px 20px 0
+        padding: 14px 20px
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #FFFFFF
+        border: 1px solid transparent
+        -webkit-transition: all 1s
+        transition: all 1s
+
+    &__button:hover
+        background-color: #FFFFFF
+        color: #F16D7F
+        border-color: #F16D7F
+
+@media (max-width: 1024px)
+    .container
+        padding-left: 16px
+        padding-right: 16px
